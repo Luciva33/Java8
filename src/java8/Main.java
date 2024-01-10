@@ -7,7 +7,7 @@ public class Main {
 		//1.勇者を生成 
 		
 		Hero h = new Hero();  //インスタンスの生成  
-		Hero h2 = new Hero(); 
+		//Hero h2 = new Hero(); 
               //クラス名　変数名　= new クラス名()
 		      //Heroの()は9章で意味が出てくる
 		      //インスタンス化はnew をつかう
@@ -23,11 +23,20 @@ public class Main {
 		
 		//勇者のメソッドを呼び出し
 		
-		h.sit(5);
-		h.slip();
-		h.sit(25);
-		h.run();
+		Matango m1 = new Matango();
+		m1.hp = 50;
+		m1.suffix = 'A';
+				
+		Matango m2 = new Matango();
+		m2.hp = 48;
+		m2.suffix = 'B';
+				
 		
+		h.slip();
+		m1.run();
+		m2.run();
+		h.run();
+	
 	}
 
 }
